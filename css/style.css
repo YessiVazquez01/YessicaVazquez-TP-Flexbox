@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.header{
+    height: 100vh;
+}
+.contenedorNav{
+    display:flex;
+    justify-content:space-between;
+    background-color:  #323b41  ;
+    padding:1.2rem 5rem;
+    height: 12%;
+}
+.contenedorLogo{
+    width: 18%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedorLogo img{
+    width: 100px;
+    object-fit: cover;
+}
+.contenedorLogo h2{
+    color:white;
+    font-size: 20px;
+}
+.navegacion ul{
+    height: 100%;
+    list-style: none;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+.linkNav_conf{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+}
+.linkNav{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #B1AAA9;
+}
+.linkNav_ticket{
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: green;
+}
+.contenedorConferencia{
+    background:linear-gradient(to right, #0000009c,#0000009c ),url("../assets/img/ba1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 88%;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+.hijoConferencia{
+    padding-right: 5rem;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+.hijoConferencia h1{
+    color:white;
+    font-size: 2rem; /*32px*/
+    text-align: right;
+}
+.textoConferencia{
+    font-size: 1rem;
+    line-height: 1.5;
+    color:white;
+    text-align: right;
+}
+.hijoConferencia .buttonConferencia{
+    display: flex;
+    justify-content: flex-end;
+}
+.hijoConferencia .buttonConferencia button{
+    margin-right: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+}
+.hijoConferencia .buttonConferencia .blanco{
+    background: none;
+    border: 1px solid white;
+}
+.hijoConferencia .buttonConferencia .blanco:hover{    
+    background:  white;
+    color: #000;
+    cursor: pointer;
+}
+.hijoConferencia .buttonConferencia .verde{
+    background: #22A435;
+    border: 1px #1DC637;
+}
+.hijoConferencia .buttonConferencia .verde:hover{    
+    background:  #30D013     ;
+    cursor: pointer;
+}
+.sectionOradores h2, .orador{
+    margin: 10px;
+}
+.sectionOradores h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.sectionOradores h2 .orador{
+    font-size: 0.9rem;
+}
+.padreCards{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    display: inline-block;
+    background-color:white;
+    width:30%;
+    height:80%;
+    border:1px solid rgb(180, 180, 180);
+    border-radius: 5px;
+}
+.card img{
+    width:100%;
+    height: 60%;
+    object-fit: cover;
+}
+.cardBody{
+    margin:17px;
+}
+.cardBody .oficios{
+    display: flex;
+    width: 105px;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.cardBody .oficios2{
+    display: flex;
+    width: 115px;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.cardBody .oficios .amarillo{
+    background-color: #F7E03F;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+.cardBody .oficios .celeste{
+    background-color: #4096D6;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: white;
+}
+.cardBody .oficios2 .gris{
+    background-color: #9C9FA1;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: white;
+}
+.cardBody .oficios2 .rojo{
+    background-color: #F8342A ;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: white;
+}
+.cardBody h3{
+    padding-top: 2px;
+}
+.cardBody p{
+    padding: 10px 0;
+}
+.sectionLugarFecha{
+    margin-top: 35px;
+    display: inline-flex;
+}
+.imgPlaya {
+    width: 100%;
+    height:60vh;
+    border: 1px solid white;
+}
+.imgPlaya img{
+    width: 100%;
+    height:100%;
+}
+.lugar{
+    background-color: #4E5053       ;
+    color:#fff;
+    width: 100%;
+    height:60vh;
+    border: 1px solid white;
+}
+.lugar h2, .lugar p{
+    margin: 15px;
+}
+.lugar p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.lugar .btn{
+    margin: 5px;
+    width: 90px;
+    height: 30px;
+    background-color: #4E5053;
+    color:white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.lugar .btn:hover{
+    cursor: pointer;
+    background: white;
+    color: #000;
+}
+.sectionFormulario{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.sectionFormulario h2, .orador{
+    margin: 10px;
+}
+.sectionFormulario h2{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.sectionFormulario h2 .orador{
+    font-size: 0.9rem;
+}
+.formulario .input{
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+}
+.formulario .input input{
+    margin-top: 15px;
+    width: 330px;
+    height: 30px;
+}
+.formulario input::placeholder{
+    padding-left: 10px;
+}
+.formulario .texto{
+    margin-top: 15px;
+}
+.formulario .texto textarea{
+    width: 690px;
+    height: 135px;
+}
+.formulario textarea::placeholder{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.formulario small{
+    display: flex;
+    margin: auto;
+    width: 690px;
+    color:  #70827c 
+}
+.formulario .buttonFormulario{
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    width: 690px;
+}
+.formulario .buttonFormulario input{
+    margin: 15px 0;
+    width: 340px;
+    height: 40px;
+    border-radius: 5px;
+    border:1px solid #83E625;
+    background:  #81c53d ;
+    color: white;
+    font-size: 17px;
+}
+.formulario .buttonFormulario input:hover{    
+    background:  #6AA531   ;
+    cursor: pointer;
+}
+footer{
+    background: linear-gradient(to right,#194054 ,#174A63 ,#2B6683  );
+    height: 15vh;
+}
+.footer{
+    display:flex;
+    justify-content:space-around;
+    padding:1.2rem 5rem;
+    height: 100%
+}
+.footer a{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    padding-left:1.3rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    width: 20%;
+}
+/*Galaxy S20 Ultra 412 - 915*/
+@media screen and (max-width: 767px)   {
+    .header{
+        height: 80vh;
+    }
+    .contenedorNav{
+        background-color: #323b41;
+        flex-direction: column;
+        padding: 1rem 5rem;
+        height: 25vh;
+        align-items: center;
+    }
+    .navegacion{
+        height: 100%;
+    }
+    .navegacion .listaNav{
+        padding: 10px 0;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .contenedorConferencia{
+        height: 70%;
+        justify-content: center;
+    }
+    .hijoConferencia{
+        padding: 2rem;
+        justify-content: space-between;
+        width: 100%;
+        height: 80%;
+    }
+    .hijoConferencia h1{
+        text-align: center;
+    }
+    .textoConferencia{
+        text-align: center;
+    }
+    .hijoConferencia .buttonConferencia{
+        display: flex;
+        justify-content: center;
+    }
+    .padreCards{
+        flex-direction: column;
+    }
+    .card{
+        width: initial;
+    }
+    .sectionLugarFecha{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgPlaya {
+        height:30vh;
+    }
+    .lugar{
+        height:30vh;
+    }
+    .lugar h2, .lugar p{
+        margin: 10px;
+    }
+    .formulario .input{
+        flex-direction: column;
+        width: 350px;
+    }
+    .formulario .input input{
+        width: 350px;
+    }
+    .formulario .texto textarea{
+        width: 350px;
+    }
+    .formulario .buttonFormulario{
+        flex-direction: column;
+        width: 350px;
+    }
+    .formulario small{
+        width: 350px;
+    }
+    footer{
+        height: 30vh;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer a{
+        width: initial;
+    }
+}
+/*iPad Air 820-1180*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .header{
+        height: 45vh;
+    }
+    .contenedorNav{
+        background-color: #323b41;
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+    .listaNav a{
+        padding: 10px 2px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .contenedorConferencia{
+        height: 80%;
+        justify-content: center;
+    }
+    .hijoConferencia{
+        padding: 2rem;
+        justify-content: space-between;
+        width: 100%;
+        height: 80%;
+    }
+    .sectionOradores{
+        margin:30px 0;
+    }
+    .sectionLugarFecha{
+        margin-top: initial;
+    }
+    .imgPlaya {
+        height:28vh;
+    }
+    .lugar{
+        height:28vh;
+    }
+}
